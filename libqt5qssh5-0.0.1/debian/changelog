@@ -1,0 +1,22 @@
+libqt5qssh5 (0.0.1-8) UNRELEASED; urgency=medium
+
+  * added new d/rules file
+  * removed xvfb from deps
+  * removed tests overridea from d/rules
+  * adding to the docs
+  * removed the docs as there was none
+
+ -- Joseph Mills <josephjamesmills@gmail.com>  Tue, 05 May 2015 18:28:53 -0600
+
+libqt5qssh5 (0.0.1-3) UNRELEASED; urgency=medium
+
+  * reworte it all into one meta package.
+  * removed some qt versions to match fo ubuntu
+
+ -- Joseph Mills <josephjamesmills@gmail.com>  Mon, 04 May 2015 17:06:49 -0600
+
+libqt5qssh5 (0.0.1-1) unstable; urgency=low
+
+  * Initial release
+
+ -- Joseph Mills <josephjamesmills@gmail.com>  Fri, 30 Jan 2015 16:12:15 -0700

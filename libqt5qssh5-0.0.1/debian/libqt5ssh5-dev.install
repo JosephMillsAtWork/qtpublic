@@ -1,0 +1,14 @@
+usr/include/*/qt5/QtSsh/sftpchannel.h
+usr/include/*/qt5/QtSsh/sshconnection.h
+usr/include/*/qt5/QtSsh/ssherrors.h
+usr/include/*/qt5/QtSsh/sshpseudoterminal.h
+usr/include/*/qt5/QtSsh/sshconnectionmanager.h
+usr/include/*/qt5/QtSsh/sshkeygenerator.h
+usr/include/*/qt5/QtSsh/sshremoteprocess.h
+usr/include/*/qt5/QtSsh/sftpdefs.h 
+usr/include/*/qt5/QtSsh/ssh_global.h 
+usr/include/*/qt5/QtSsh/sftpfilesystemmodel.h
+usr/include/*/qt5/QtSsh/sshremoteprocessrunner.h
+usr/include/*/qt5/QtSsh/sshdirecttcpiptunnel.h
+usr/include/*/qt5/QtSsh/sshkeycreationdialog.h
+usr/include/*/qt5/QtSsh/ui_sshkeycreationdialog.h 

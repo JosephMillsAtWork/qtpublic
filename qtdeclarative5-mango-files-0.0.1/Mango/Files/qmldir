@@ -1,0 +1,2 @@
+module Mango.Files
+plugin Mango.Files

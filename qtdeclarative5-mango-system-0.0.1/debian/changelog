@@ -1,0 +1,36 @@
+qtdeclarative5-mango-system (0.0.1-12) trusty; urgency=medium
+
+  * adding docs
+  * more to the docs
+  * added qch path to make files
+  * more docs
+
+ -- Joseph Mills <josephjamesmills@gmail.com>  Tue, 05 May 2015 19:17:01 -0600
+
+qtdeclarative5-mango-system (0.0.1-8) UNRELEASED; urgency=medium
+
+  * adding docs
+  * adding correct install path
+  * more developer docs 
+
+ -- Joseph Mills <josephjamesmills@gmail.com>  Tue, 05 May 2015 18:52:09 -0600
+
+qtdeclarative5-mango-system (0.0.1-5) unstable; urgency=medium
+
+  * added new patch 
+
+ -- Joseph Mills <josephjamesmills@gmail.com>  Tue, 05 May 2015 12:39:50 -0600
+
+qtdeclarative5-mango-system (0.0.1-4) unstable; urgency=medium
+
+  * cleaning up d/control
+  * more cleaning
+  * added to the readme file and trying to change libc++ to be ok for trusty
+
+ -- Joseph Mills <josephjamesmills@gmail.com>  Tue, 05 May 2015 12:38:41 -0600
+
+qtdeclarative5-mango-system (0.0.1-1) unstable; urgency=low
+
+  * first push to for debian packaging
+
+ -- Joseph Mills <josephjamesmills@gmail.com>  Sun, 08 Feb 2015 12:59:11 -0700

@@ -1,0 +1,72 @@
+Source: qtdeclarative5-mango-network
+Section: libs
+Priority: optional
+Maintainer: Joseph Mills <josephjamesmills@gmail.com>
+Build-Depends: asciidoc,
+               autoconf,
+               automake,
+               autotools-dev,
+               debhelper (>= 9),
+               dh-autoreconf,
+               libavahi-compat-libdnssd-dev,
+               libcurl4-gnutls-dev,
+               libmodbus-dev,
+               libqt5core5a,
+               libqt5gui5,
+               libqt5multimedia5,
+               libqt5network5,
+               libqt5qml5,
+               libqt5scripttools5,
+               libqt5sql5-sqlite,
+               libqt5widgets5,
+               libstdc++6,
+               libtool,
+               qml-module-qtquick2 | qtdeclarative5-qtquick2-plugin,
+               qt5-qmake,
+               qtbase5-dev,
+               qtbase5-dev-tools,
+               qtbase5-private-dev,
+               qtdeclarative5-dev,
+               qtdeclarative5-private-dev,
+               qttools5-dev-tools,
+               xmlto,
+               xsltproc
+Standards-Version: 3.9.6
+
+Package: qtdeclarative5-mango-network
+Architecture: any
+Depends: libavahi-compat-libdnssd-dev,
+         libqt5core5a,
+         libqt5gui5,
+         libqt5multimedia5,
+         libqt5network5,
+         libqt5qml5,
+         libqt5sql5-sqlite,
+         libqt5widgets5,
+         qml-module-qtquick2 | qtdeclarative5-qtquick2-plugin,
+         qt5-qmake,
+         qtbase5-dev,
+         ${misc:Depends},
+         ${shlibs:Depends}
+Description: Qml plugin for interacting with the Network
+ This is a Qml plugin that has many features such as
+ OAUTH2
+ Bonjour/Avavi
+ ssl
+ and many others
+
+Package: qtdeclarative5-mango-network-doc
+Section: doc
+Architecture: all
+Multi-Arch: foreign
+Pre-Depends: dpkg (>= 1.15.6~), ${misc:Pre-Depends}
+Depends: qtdeclarative5-doc-html,
+         qtmultimedia5-doc-html,
+         qtscript5-doc-html,
+         qtsvg5-doc-html,
+         qtwebkit5-doc-html,
+         ${misc:Depends},
+         ${shlibs:Depends}
+Provides: qtdeclarative5-mango-network-doc
+Description: Qt Components for Mango - documentation
+ This package contains developer documentation.

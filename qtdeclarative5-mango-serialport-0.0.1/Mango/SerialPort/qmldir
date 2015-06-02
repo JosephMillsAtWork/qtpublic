@@ -1,0 +1,3 @@
+module Mango.SerialPort
+plugin Mango.SerialPort
+

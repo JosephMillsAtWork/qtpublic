@@ -1,0 +1,45 @@
+project			= Mango.Components
+description             = Mango Components Documentation
+#url                    = http://qt-project.org/doc/qt-$QT_VER/qtmultimedia
+version                 = 0.1
+
+# The following parameters are for creating a qhp file, the qhelpgenerator
+# program can convert the qhp file into a qch file which can be opened in
+# Qt Assistant and/or Qt Creator.
+
+## Used to make offline documentation
+include($QT_INSTALL_DOCS/global/qt-html-templates-offline.qdocconf)
+
+# Defines the name of the project. You cannot use operators (+, =, -) in
+# the name. Properties for this project are set using a qhp.<projectname>.property
+# format.
+qhp.projects = Mango.Components
+qhp.Mango.Components.file = mango.componets.qhp
+qhp.Mango.Components.namespace = org.Mango.Components.0.1
+qhp.Mango.Components.indexTitle = Mango.Components
+qhp.Mango.Components.virtualFolder  = mangoComponents
+
+# For listing child nodes in Qt Creator or Assistant.
+qhp.Mango.Components.subprojects = classes qmltypes
+qhp.Mango.Components.subprojects.classes.title = C++ Classes
+qhp.Mango.Components.subprojects.classes.indexTitle = Mango C++ Classes
+qhp.Mango.Components.subprojects.classes.selectors = class fake:headerfile
+qhp.Mango.Components.subprojects.classes.sortPages = true
+qhp.Mango.Components.subprojects.qmltypes.title = QML Types
+qhp.Mango.Components.subprojects.qmltypes.indexTitle = Qt Mango QML Types
+qhp.Mango.Components.subprojects.qmltypes.selectors = fake:qmlclass
+qhp.Mango.Components.subprojects.qmltypes.sortPages = true
+
+
+
+
+imagedirs += images
+
+sourcedirs += ../Mango/Components \
+
+excludedirs += ../../
+
+sources.fileextensions  = "*.qdoc *.qml"
+outputdir = $OUTDIR
+depends += qtcore qtdoc qtquick qtqml qsql qtnetwork qtmultimedia
+

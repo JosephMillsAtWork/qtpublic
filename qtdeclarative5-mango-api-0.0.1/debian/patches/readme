@@ -1,0 +1,46 @@
+Description: add a base readme file to the project. 
+ TODO: fix the readme file and get a beter framework for all
+ .
+ qtdeclarative5-mango-api (0.0.1-3) UNRELEASED; urgency=medium
+ .
+   * added to the readme file
+Author: Joseph Mills <josephjamesmills@gmail.com>
+
+---
+The information above should follow the Patch Tagging Guidelines, please
+checkout http://dep.debian.net/deps/dep3/ to learn about the format. Here
+are templates for supplementary fields that you might want to add:
+
+Origin: <vendor|upstream|other>, <url of original patch>
+Bug: <url in upstream bugtracker>
+Bug-Debian: https://bugs.debian.org/<bugnumber>
+Bug-Ubuntu: https://launchpad.net/bugs/<bugnumber>
+Forwarded: <no|not-needed|url proving that it has been forwarded>
+Reviewed-By: <name and email of someone who approved the patch>
+Last-Update: <YYYY-MM-DD>
+
+--- qtdeclarative5-mango-api-0.0.1.orig/README.md
++++ qtdeclarative5-mango-api-0.0.1/README.md
+@@ -0,0 +1,22 @@
++module Mango.Api
++
++BaseModel 0.1 BaseModel.qml
++LoopModel 0.1 LoopModel.qml
++PostModel 0.1 PostModel.qml
++PutModel 0.1 PutModel.qml
++Login 0.1 Login.qml
++Logout 0.1 Logout.qml
++GetAllPoints 0.1 GetAllPoints.qml
++GetPointByXid 0.1 GetPointByXid.qml
++GetPointStats 0.1 GetPointStats.qml
++GetPointValue 0.1 GetPointValue.qml
++WebSocketPoiints 0.1 WebSocketPoiints.qml
++ModifyPoint 0.1 ModifyPoint.qml
++RealTimeValue 0.1 RealTimeValue.qml
++RuningPointsAll 0.1 RuningPointsAll.qml
++GetHierarchy 0.1 GetHierarchy.qml
++GetFolderByName 0.1 GetFolderByName.qml
++GetFolderById 0.1 GetFolderById.qml
++FormateLocalDate 01 FormateLocalDate.qml 
++PutDataPoint 0.1 PutDataPoint.qml
++CreatePoint 0.1 CreatePoint.qml

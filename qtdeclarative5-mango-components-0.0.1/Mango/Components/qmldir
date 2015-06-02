@@ -1,0 +1,6 @@
+module Mango.Components
+
+MangoButton 0.1 MangoButton.qml
+MangoBreakLine 0.1 MangoBreakLine.qml
+MangoImageButton 0.1 MangoImageButton.qml
+MangoImageButtonVertical.qml 0.1 MangoImageButtonVertical.qml

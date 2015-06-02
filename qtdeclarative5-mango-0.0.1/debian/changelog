@@ -1,0 +1,5 @@
+qtdeclarative5-mango (0.0.1-1) unstable; urgency=low
+
+  * first push to for debian packaging
+
+ -- Joseph Mills <josephjamesmills@gmail.com>  Sun, 08 Feb 2015 12:59:11 -0700

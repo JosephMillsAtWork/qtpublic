@@ -1,0 +1,35 @@
+#!/usr/bin/make -f
+# Uncomment this to turn on verbose mode.
+# export DH_VERBOSE=1
+export DPKG_GENSYMBOLS_CHECK_LEVEL=4
+export QMAKEFEATURES=$(CURDIR)/features
+export QT_SELECT := qt5
+QTINCLUDE = $(shell qmake -query QT_INSTALL_HEADERS)
+DEB_HOST_MULTI_ARCH ?= $(shell dpkg-architecture -qDEB_BUILD_MULTIARCH)
+DEB_HOST_ARCH ?= $(shell dpkg-architecture -qDEB_HOST_ARCH)
+CONFIGURE_SWITCHES = "-r" \
+                     "ROOT_SOURCE_DIR=$(CURDIR)" \
+                     "ROOT_BUILD_DIR=$(CURDIR)" 
+
+# Skip tests on the archs they are known to be flaky  with current configuration
+testskip_architectures := powerpc arm64 ppc64el
+
+override_dh_auto_configure:
+	dh_auto_configure -- $(CONFIGURE_SWITCHES)
+
+%:
+	dh $@ --fail-missing
+	
+override_dh_build:
+	dh_auto_build --parallel
+	
+override_dh_install:
+	mkdir -p debian/tmp$(QTINCLUDE)/QtSsh/
+	cp -r $(CURDIR)/src/libs/ssh/*.h debian/tmp$(QTINCLUDE)/QtSsh/
+	mkdir -p debian/tmp$(QTINCLUDE)/QtBotan/
+	cp -r $(CURDIR)/src/libs/3rdparty/botan/*.h debian/tmp$(QTINCLUDE)/QtBotan/
+	dh_install --fail-missing
+	
+override_dh_clean:
+	dh_clean -- distclean;
+	dh_clean -O--fail-missing;

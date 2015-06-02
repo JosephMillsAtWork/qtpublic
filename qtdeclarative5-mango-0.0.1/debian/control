@@ -1,0 +1,23 @@
+Source: qtdeclarative5-mango
+Section: libs
+Priority: optional
+Maintainer: Joseph Mills <josephjamesmills@gmail.com>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.6
+
+Package: qtdeclarative5-mango
+Architecture: any
+Depends: qtdeclarative5-mango-components,
+	 qtdeclarative5-mango-ssh,
+	 qtdeclarative5-mango-utils,
+	 qtdeclarative5-mango-serialport,
+	 qtdeclarative5-mango-files,
+	 qtdeclarative5-mango-network,
+	 qtdeclarative5-mango-media,
+	 qtdeclarative5-mango-terminal,
+	 qtdeclarative5-mango-sql,
+	 qtdeclarative5-mango-api,
+	 qtdeclarative5-mango-system,
+         ${misc:Depends},
+         ${shlibs:Depends}
+Description: Meta package that is used to install all the mango qml plugins

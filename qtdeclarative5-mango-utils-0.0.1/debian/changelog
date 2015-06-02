@@ -1,0 +1,13 @@
+qtdeclarative5-mango-utils (0.0.1-3) UNRELEASED; urgency=medium
+
+  * cleaned up the debian control files
+  * adding qtmultimedian-dev to deps and also qt5tools-dev for docs
+  * autobuild
+
+ -- Joseph Mills <josephjamesmills@gmail.com>  Wed, 06 May 2015 11:16:42 -0600
+
+qtdeclarative5-mango-utils (0.0.1-1) unstable; urgency=low
+
+  * first push to for debian packaging
+
+ -- Joseph Mills <josephjamesmills@gmail.com>  Sun, 08 Feb 2015 12:59:11 -0700

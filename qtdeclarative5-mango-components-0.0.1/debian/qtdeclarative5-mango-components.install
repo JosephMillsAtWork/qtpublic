@@ -1,0 +1,6 @@
+usr/lib/*/qt5/qml/Mango/Components/MangoBreakLine.qml
+usr/lib/*/qt5/qml/Mango/Components/MangoButton.qml
+usr/lib/*/qt5/qml/Mango/Components/MangoImageButton.qml
+usr/lib/*/qt5/qml/Mango/Components/MangoImageButtonVertical.qml
+usr/lib/*/qt5/qml/Mango/Components/libMango.Components.so
+usr/lib/*/qt5/qml/Mango/Components/qmldir

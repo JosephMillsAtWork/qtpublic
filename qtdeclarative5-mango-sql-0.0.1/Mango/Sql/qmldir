@@ -1,0 +1,3 @@
+module Mango.Sql
+plugin Mango.Sql
+

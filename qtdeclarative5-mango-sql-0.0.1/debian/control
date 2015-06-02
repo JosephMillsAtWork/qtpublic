@@ -1,0 +1,72 @@
+Source: qtdeclarative5-mango-sql
+Section: libs
+Priority: optional
+Maintainer: Joseph Mills <josephjamesmills@gmail.com>
+Build-Depends: debhelper (>= 9),
+               libmysqlclient-dev,
+               libqt5core5a,
+               libqt5gui5,
+               libqt5multimedia5,
+               libqt5network5,
+               libqt5qml5,
+               libqt5sql5,
+               libqt5sql5-mysql,
+               libqt5sql5-sqlite,
+               libqt5widgets5,
+               mysql-client-5.5,
+               qml-module-qtquick2 | qtdeclarative5-qtquick2-plugin,
+               qt5-qmake,
+               qtbase5-dev,
+	       qtbase5-private-dev,
+               qtdeclarative5-private-dev,
+               libqt5scripttools5,
+               qttools5-dev-tools
+Standards-Version: 3.9.6
+
+Package: qtdeclarative5-mango-sql
+Architecture: any
+Recommends: libqt5sql5-odbc, 
+            libqt5sql5-psql, 
+            libqt5sql5-sqlite, 
+            libqt5sql5-tds
+Depends: libmysqlclient-dev,
+         libqt5core5a,
+         libqt5gui5,
+         libqt5multimedia5,
+         libqt5network5,
+         libqt5qml5,
+         libqt5sql5,
+         libqt5sql5-mysql,
+         libqt5widgets5,
+         mysql-client-5.5,
+         qml-module-qtquick2 | qtdeclarative5-qtquick2-plugin,
+         qt5-qmake,
+         qtbase5-dev,
+         ${misc:Depends},
+         ${shlibs:Depends}
+Description: Mango Sql a Qml plugin for interacting with the Sql databases
+ Make models and query databases in Qml
+ databases that are supported
+ mysql
+ sqlite
+ odbc
+ tds
+ psql
+
+Package: qtdeclarative5-mango-sql-doc
+Section: doc
+Architecture: all
+Multi-Arch: foreign
+Pre-Depends: dpkg (>= 1.15.6~), ${misc:Pre-Depends}
+Depends: qtdeclarative5-doc-html,
+         qtmultimedia5-doc-html,
+         qtscript5-doc-html,
+         qtsvg5-doc-html,
+         qtwebkit5-doc-html,
+         ${misc:Depends},
+         ${shlibs:Depends}
+Provides: qtdeclarative5-mango-sql-doc
+Description: Qt Components for Mango Serialport- documentation
+ This package contains developer documentation for the Qml plugin.
+ This package makes the qch file for reading the help docs in qt creator
+ And are also localed /usr/share/qtdeclarative5-mango-api/docs

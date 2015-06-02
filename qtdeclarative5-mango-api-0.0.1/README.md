@@ -1,0 +1,22 @@
+module Mango.Api
+
+BaseModel 0.1 BaseModel.qml
+LoopModel 0.1 LoopModel.qml
+PostModel 0.1 PostModel.qml
+PutModel 0.1 PutModel.qml
+Login 0.1 Login.qml
+Logout 0.1 Logout.qml
+GetAllPoints 0.1 GetAllPoints.qml
+GetPointByXid 0.1 GetPointByXid.qml
+GetPointStats 0.1 GetPointStats.qml
+GetPointValue 0.1 GetPointValue.qml
+WebSocketPoiints 0.1 WebSocketPoiints.qml
+ModifyPoint 0.1 ModifyPoint.qml
+RealTimeValue 0.1 RealTimeValue.qml
+RuningPointsAll 0.1 RuningPointsAll.qml
+GetHierarchy 0.1 GetHierarchy.qml
+GetFolderByName 0.1 GetFolderByName.qml
+GetFolderById 0.1 GetFolderById.qml
+FormateLocalDate 01 FormateLocalDate.qml 
+PutDataPoint 0.1 PutDataPoint.qml
+CreatePoint 0.1 CreatePoint.qml

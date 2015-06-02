@@ -1,0 +1,41 @@
+project					= Mango.Files
+description             =  Mango Files Documentation
+#url                    = http://qt-project.org/doc/qt-$QT_VER/qtmultimedia
+version                 = 0.1
+
+# The following parameters are for creating a qhp file, the qhelpgenerator
+# program can convert the qhp file into a qch file which can be opened in
+# Qt Assistant and/or Qt Creator.
+
+## Used to make offline documentation
+include($QT_INSTALL_DOCS/global/qt-html-templates-offline.qdocconf)
+
+# Defines the name of the project. You cannot use operators (+, =, -) in
+# the name. Properties for this project are set using a qhp.<projectname>.property
+# format.
+qhp.projects = MangoFiles
+qhp.MangoFiles.file = mango.files.qhp
+qhp.MangoFiles.namespace = org.MangoFiles.0.1
+qhp.MangoFiles.indexTitle = MangoFiles
+qhp.MangoFiles.virtualFolder  = MangoFiles
+
+# For listing child nodes in Qt Creator or Assistant.
+qhp.MangoFiles.subprojects = classes qmltypes
+qhp.MangoFiles.subprojects.classes.title = C++ Classes
+qhp.MangoFiles.subprojects.classes.indexTitle = Mango Files C++ Classes
+qhp.MangoFiles.subprojects.classes.selectors = class fake:headerfile
+qhp.MangoFiles.subprojects.classes.sortPages = true
+qhp.MangoFiles.subprojects.qmltypes.title = QML Types
+qhp.MangoFiles.subprojects.qmltypes.indexTitle = Qt Mango Files QML Types
+qhp.MangoFiles.subprojects.qmltypes.selectors = fake:qmlclass
+qhp.MangoFiles.subprojects.qmltypes.sortPages = true
+
+imagedirs += images
+
+sourcedirs += ../Mango/Files/ \
+
+excludedirs += ../../
+
+sources.fileextensions  = "*.qdoc *.cpp *.qml"
+outputdir = $OUTDIR
+depends += qtcore qtdoc qtquick qtqml

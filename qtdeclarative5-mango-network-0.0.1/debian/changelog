@@ -1,0 +1,11 @@
+qtdeclarative5-mango-network (0.0.1-2) UNRELEASED; urgency=medium
+
+  * cleaned up d/control
+
+ -- Joseph Mills <josephjamesmills@gmail.com>  Mon, 04 May 2015 17:32:32 -0600
+
+qtdeclarative5-mango-network (0.0.1-1) unstable; urgency=low
+
+  * first push to for debian packaging
+
+ -- Joseph Mills <josephjamesmills@gmail.com>  Sun, 08 Feb 2015 12:59:11 -0700

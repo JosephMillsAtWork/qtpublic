@@ -1,0 +1,20 @@
+qtdeclarative5-mango-components (0.0.1-6) UNRELEASED; urgency=medium
+
+  * fixing up docs
+
+ -- Joseph Mills <josephjamesmills@gmail.com>  Tue, 05 May 2015 22:04:11 -0600
+
+qtdeclarative5-mango-components (0.0.1-5) UNRELEASED; urgency=medium
+
+  * Cleaned up d/control
+  * added all arch
+  * another clean
+  * yac
+
+ -- Joseph Mills <josephjamesmills@gmail.com>  Tue, 05 May 2015 21:57:44 -0600
+
+qtdeclarative5-mango-components (0.0.1-1) unstable; urgency=low
+
+  * first push to for debian packaging
+
+ -- Joseph Mills <josephjamesmills@gmail.com>  Sun, 08 Feb 2015 12:59:11 -0700

@@ -1,0 +1,126 @@
+Source: libqt5qssh5
+Section: libs
+Priority: optional
+Maintainer: Joseph Mills <josephjamesmills@gmail.com>
+Build-Depends: debhelper (>= 9),
+               libbotan-1.10-0,
+               libbotan1.10-dev,
+               libqt5core5a,
+               libqt5network5,
+               libqt5sql5-sqlite,
+               qml-module-qtquick2 | qtdeclarative5-qtquick2-plugin,
+               qml-module-qttest | qtdeclarative5-test-plugin,
+               qt5-qmake,
+               qtbase5-dev,
+               qtbase5-dev-tools,
+               qtbase5-private-dev,
+               qtdeclarative5-dev,
+               qtdeclarative5-private-dev
+Standards-Version: 3.9.6
+
+Package: libqt5qssh5
+Architecture: any
+Section: metapackages
+Pre-Depends: dpkg (>= 1.15.6~), ${misc:Pre-Depends}
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+	 libbotan1.10-dev,
+         libqt5core5a,
+         libqt5network5,
+         libqt5sql5-sqlite,
+         qml-module-qtquick2 | qtdeclarative5-qtquick2-plugin,
+         qml-module-qttest | qtdeclarative5-test-plugin,
+         qt5-qmake,
+         qtbase5-dev,
+         qtbase5-dev-tools,
+         qtbase5-private-dev,
+         libqt5ssh5,
+         libqt5botan5
+Description: MetaPackage for qt5ssh andq qt5botan
+ These Two library are libbotan and libqtssh. Qtssh is
+ a library that exposes c++ to the qt framework this depends 
+ on Qtbotan it is packaged up with it. This library is 
+ used also for the package qtdeclarative5-mango-ssh and
+ other IAS developed software.
+
+Package: libqt5ssh5
+Architecture: any
+Section: libs
+Pre-Depends: dpkg (>= 1.15.6~), ${misc:Pre-Depends}
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+	 libbotan1.10-dev,
+         libqt5core5a,
+         libqt5network5,
+         libqt5sql5-sqlite,
+         qml-module-qtquick2 | qtdeclarative5-qtquick2-plugin,
+         qml-module-qttest | qtdeclarative5-test-plugin,
+         qt5-qmake,
+         qtbase5-dev,
+         qtbase5-dev-tools,
+         qtbase5-private-dev,
+         qtdeclarative5-dev,
+         qtdeclarative5-private-dev
+Description: bindings to SSH File Transfer Protocol
+ This lib is used to expose ssh to the qt framework
+ One can use this package for C++ aplications. For Qml
+ Please feel free to check out the binding for that in
+ the package called qtdeclarative5-mango-ssh
+
+Package: libqt5botan5
+Section: libs
+Architecture: any
+Pre-Depends: dpkg (>= 1.15.6~), ${misc:Pre-Depends}
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+	 libbotan1.10-dev,
+         libqt5core5a,
+         libqt5network5,
+         libqt5sql5-sqlite,
+         qml-module-qtquick2 | qtdeclarative5-qtquick2-plugin,
+         qml-module-qttest | qtdeclarative5-test-plugin,
+         qt5-qmake,
+         qtbase5-dev,
+         qtbase5-dev-tools,
+         qtbase5-private-dev,
+         qtdeclarative5-dev,
+         qtdeclarative5-private-dev
+Description: Qt bindings for botan (multiplatform crypto library)
+ This package libbotan to the qtframework used for packages like libqt5ssh5
+ Botan is a C++ library which provides support for many common cryptographic
+ operations, including encryption, authentication, and X.509v3 certificates and
+ CRLs. A wide variety of algorithms is supported, including RSA, DSA, DES, AES,
+ MD5, and SHA-1..
+ 
+Package: libqt5botan5-dev
+Section: libdevel
+Architecture: all
+Multi-Arch: foreign
+Pre-Depends: dpkg (>= 1.15.6~), ${misc:Pre-Depends}
+Depends: ${misc:Depends},
+         ${shlibs:Depends}
+Provides: libqt5botan5-dev
+Description: Development files for libqtbotan
+ development files for the package libqt5botan5
+
+Package: libqt5ssh5-dev
+Section: libdevel
+Architecture: all
+Multi-Arch: foreign
+Pre-Depends: dpkg (>= 1.15.6~), ${misc:Pre-Depends}
+Depends: ${misc:Depends},
+         ${shlibs:Depends}
+Provides: libqt5ssh5-dev
+Description: Development files for libqt5ssh5
+ development files for the package libqt5ssh5
+
+Package: libqt5ssh5-private-dev
+Section: libdevel
+Architecture: all
+Multi-Arch: foreign
+Pre-Depends: dpkg (>= 1.15.6~), ${misc:Pre-Depends}
+Depends: ${misc:Depends},
+         ${shlibs:Depends}
+Provides: libqt5ssh5-private-dev
+Description: Private Development files for libqt5ssh5
+ private development files for the package libqt5ssh5
